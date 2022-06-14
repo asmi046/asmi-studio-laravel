@@ -32,7 +32,7 @@
         <div class = "content">
             <h2>Услуги и цены</h2>
             
-            <?php //include "usl-box.php";?>
+            @include('parts.uslugi')
             
             <span class = "section_down_text">
                 <h3>Не знаете что Выбрать? </h3>
@@ -107,9 +107,8 @@
     </section>
 
 
-    <?php //include("kak-rabotaet.php");?>
-
-
+    @include('parts.kak_rabotaet')
+    
     <section class = "web_facts full-blk" style="background-image: url(img/new-facts.webp);">
         <div class = "text_iner_blk text_iner_blk_left">
             <h2>Все еще думаете <br/>НУЖЕН ЛИ ВАМ САЙТ?</h2>
@@ -203,7 +202,7 @@
         </div>
     </section>
 
-    <?php //include("port-inmain.php");?>
+    @include('parts.portfolio_inmain')
 
     <section id = "faq" class = "web_faq">
         <div class = "content">

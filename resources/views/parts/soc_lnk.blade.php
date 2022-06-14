@@ -1,0 +1,4 @@
+<a target="_blank" class = "socicon" href = "https://www.instagram.com/asmistudio046/"><img src = "<?php if (!empty($_SERVER['HTTPS'])) echo "https://"; else	echo "http://"; echo $_SERVER['HTTP_HOST']; ?>/img/icon/instagram-logo.svg"/></a>
+<a target="_blank" class = "socicon" href = "https://vk.com/asmistudio46"><img src = "<?php if (!empty($_SERVER['HTTPS'])) echo "https://"; else	echo "http://"; echo $_SERVER['HTTP_HOST']; ?>/img/icon/vk.svg"/></a>
+<a target="_blank" class = "socicon" href = "https://wa.me/79036330801"><img src = "<?php if (!empty($_SERVER['HTTPS'])) echo "https://"; else	echo "http://"; echo $_SERVER['HTTP_HOST']; ?>/img/icon/telegram.svg"/></a>
+<a target="_blank" class = "socicon" href = "tg://resolve?domain=asmist"><img src = "<?php if (!empty($_SERVER['HTTPS'])) echo "https://"; else	echo "http://"; echo $_SERVER['HTTP_HOST']; ?>/img/icon/whatsapp-logo.svg"/></a>

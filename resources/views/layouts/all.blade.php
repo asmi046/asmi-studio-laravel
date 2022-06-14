@@ -58,6 +58,12 @@
 
     </head>
     <body>
+        @include('parts.header_menu')
+        
+        @include('parts.windows')
+
         @yield('content')
+
+        @include('parts.footer')
     </body>
 </html>
