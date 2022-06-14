@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>@yield('title')</title>
 
-        <meta name="description" content="">
+        <meta name="description" content="@yield('description')">
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,14 +13,14 @@
         <link rel="canonical" href="" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="" />
-        <meta property="og:description" content="" />
-        <meta property="og:url" content="" />
+        <meta property="og:title" content="@yield('title')" />
+        <meta property="og:description" content="@yield('description')" />
+        <meta property="og:url" content="{{ route('home') }}" />
         <meta property="og:site_name" content="" />
 
-        <meta property="og:image" content="" />
-        <meta property="og:image:secure_url" content="" />
-        <meta property="og:image:alt" content="" />
+        <meta property="og:image" content="@yield('img_url')" />
+        <meta property="og:image:secure_url" content="@yield('img_url')" />
+        <meta property="og:image:alt" content="@yield('title')" />
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|PT+Sans&display=swap" rel="stylesheet">
         <!-- Chrome, Firefox OS and Opera -->
@@ -58,6 +58,6 @@
 
     </head>
     <body>
-
+        @yield('content')
     </body>
 </html>
