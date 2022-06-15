@@ -25,7 +25,7 @@
             <input class = "nameTel" type="tel" name="phone" placeholder="Ваш телефон">
             <input type="hidden" name="partner">
             <input class = "formthem" type="hidden" name="form" value = "Стандартное окно">
-            <span class = "policy_text">Заполняя и отправляя данную форму Вы соглашаетесь с условиями <a href = "#">политики конфиденциальности и обработки персональных данных</a></span>
+            <span class = "policy_text">Заполняя и отправляя данную форму Вы соглашаетесь с условиями <a href = "{{ route('policy') }}">политики конфиденциальности и обработки персональных данных</a></span>
             <div class="unisend_btn button">Отправить</div>
         </form>
         
@@ -50,7 +50,7 @@
             <input class = "nameTel" type="tel" name="phone" placeholder="Ваш телефон">
             <input type="hidden" name="partner">
             <input class = "formthem" type="hidden" name="form" value = "Услуга">
-            <span class = "policy_text">Заполняя и отправляя данную форму Вы соглашаетесь с условиями <a href = "#">политики конфиденциальности и обработки персональных данных</a></span>
+            <span class = "policy_text">Заполняя и отправляя данную форму Вы соглашаетесь с условиями <a href = "{{ route('policy') }}">политики конфиденциальности и обработки персональных данных</a></span>
 			<div class="unisend_btn button">Заказать</div>
         </form>
         

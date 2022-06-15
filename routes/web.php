@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\PolicyController;
+use App\Http\Controllers\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,5 @@ use App\Http\Controllers\ContactsController;
 
 Route::get('/', [IndexController::class, 'index'])->name("home");
 Route::get('/contacts', [ContactsController::class, 'index'])->name("contacts");
+Route::get('/policy', [PolicyController::class, 'policy'])->name("policy");
+Route::get('/portfolio', [PortfolioController::class, 'portfolio'])->name("portfolio");

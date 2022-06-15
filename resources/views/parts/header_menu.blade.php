@@ -19,7 +19,9 @@
 </div>
 	
 <header>
-		<a class = "mini-logo" href = "{{ route('home') }}"><img src = "{{ route('home') }}/img/logo-mini.svg"/></a>
+		<a style = "@if (Route::currentRouteName() !== "home" ) display: block; @endif" class = "mini-logo" href = "{{ route('home') }}">
+			
+			<img src = "{{ route('home') }}/img/logo-mini.svg"/></a>
 		<div class="hamburger">
 		  <span class="hamburger-top"></span>
 		  <span class="hamburger-middle"></span>
