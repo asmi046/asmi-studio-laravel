@@ -17,7 +17,6 @@ class PortfolioPostImageSeeder extends Seeder
     {
         DB::table("portfolio_post_images")->insert(
             [
-                "portfolio_post_id" => '',
                 "post_name" => '1vtorg',
                 "razdel_name" => 'Главная страница',
                 "img" => '1vtorg-main.webp',
@@ -27,7 +26,6 @@ class PortfolioPostImageSeeder extends Seeder
         
         DB::table("portfolio_post_images")->insert(
             [
-                "portfolio_post_id" => '',
                 "post_name" => '1vtorg',
                 "razdel_name" => 'Адаптация под мобильные устройства',
                 "img" => '1vtorg-mob.webp',
@@ -37,7 +35,6 @@ class PortfolioPostImageSeeder extends Seeder
             
         DB::table("portfolio_post_images")->insert(
             [
-                "portfolio_post_id" => '',
                 "post_name" => '1vtorg',
                 "razdel_name" => 'Презентация',
                 "img" => '1vtorg-nature-1.webp',
@@ -47,7 +44,6 @@ class PortfolioPostImageSeeder extends Seeder
 
         DB::table("portfolio_post_images")->insert(
             [
-                "portfolio_post_id" => '',
                 "post_name" => '1vtorg',
                 "razdel_name" => 'Презентация',
                 "img" => '1vtorg-nature-2.webp',

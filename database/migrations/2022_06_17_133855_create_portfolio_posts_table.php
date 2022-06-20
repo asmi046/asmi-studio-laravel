@@ -23,8 +23,8 @@ return new class extends Migration
             $table->text('content');
             $table->string('color1', 10);
             $table->string('color2', 10);
-            $table->string('color3', 10);
-            $table->string('color4', 10);
+            $table->string('color3', 10)->nullable();
+            $table->string('color4', 10)->nullable();
             $table->text('oblozgka');
             $table->text('page_prev');
         });

@@ -12,15 +12,17 @@
             <h1>Портфолио</h1>
             
             <div class = "all_portfolio_wraper"  >
+                @foreach ($portfolio as $item)
+                        
+                    <a href = "#" class = "portfolio_blk" style  = "background-image: url(img/portfolio/{{ $item->image_folder_name }}/{{ $item->page_prev }});">
+                        <div class = "portfolio_descr"  style = "border-left: 15px solid #1b24ff;">
+                                <h2>{{ $item->name }}</h2>
+                                <span>Сайт с посадочными страницами, регистрацией через соцсети и личным кабинетом </span>
+                        </div>
+                    </a>
 
-                <a href = "portfolio/project-wego.php" class = "portfolio_blk" style  = "background-image: url(img/portfolio/wego/wego-obl.jpg);">
-                    <div class = "portfolio_descr"  style = "border-left: 15px solid #1b24ff;">
-                            <h2>Сайт для проекта <br/>"We-Go"</h2>
-                            <span>Сайт с посадочными страницами, регистрацией через соцсети и личным кабинетом </span>
-                    </div>
-                </a>
-
-                <a href = "portfolio/project-enchi.php" class = "portfolio_blk" style  = "background-image: url(img/portfolio/enchi/enchi-obl.jpg);">
+                @endforeach
+                {{-- <a href = "portfolio/project-enchi.php" class = "portfolio_blk" style  = "background-image: url(img/portfolio/enchi/enchi-obl.jpg);">
                     <div class = "portfolio_descr"  style = "border-left: 15px solid #52B491;">
                             <h2>Сайт с каталогом продукции <br/>"Энчи-Фарм"</h2>
                             <span>Сайт с каталогом продукции и переводом на китайский язык</span>
@@ -236,7 +238,7 @@
                             <h2>Сайт коттеджного поселка <br/>"Селенга"</h2>
                             <span>Сайт строящегося коттеджного поселка "Селенга". Информационный сайт с интерактивной  картой поселка.</span>
                     </div>
-                </a>
+                </a> --}}
                 
             </div>
         </div>
