@@ -5,6 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\PortfolioPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', [IndexController::class, 'index'])->name("home");
 Route::get('/contacts', [ContactsController::class, 'index'])->name("contacts");
 Route::get('/policy', [PolicyController::class, 'policy'])->name("policy");
 Route::get('/portfolio', [PortfolioController::class, 'portfolio'])->name("portfolio");
+Route::get('/portfolio/{pagename}', [PortfolioPageController::class, 'portfolioportfolio_page'])->name("portfolio_page");
