@@ -25,6 +25,6 @@ class PortfolioPost extends Model
     ];
 
     public function portfolio_post_images() {
-        return $this->hasMany(PortfolioPostImages::Class);
+        return $this->hasMany(PortfolioPostImage::Class, "post_name");
     }
 }
