@@ -1,7 +1,7 @@
 <footer id = "contacts">
     <div class = "content">
         <div class = "fblk" id = "fblk1">
-            <img class = "logo_in_footer" src = "img/logo-main.svg"/>
+            <img class = "logo_in_footer" src = "{{ asset('img/logo-main.svg') }}"/>
             <span class = "text_pod_logo">
                 Web студия полного цикла, <br/>разработка дизайн, реклама.
             </span>
@@ -32,7 +32,7 @@
         </div>
     </div>
 </footer>
-<script type='text/javascript' src='js/jquery.js?ver=1.12.5'></script>
-<script type='text/javascript' src='js/jquery.arcticmodal-0.3.min.js'></script>
-<script type='text/javascript' src='js/scripts.min.js'></script>
-<script src="js/scripts.js?ver=1.0.14"></script>
+<script type='text/javascript' src='{{ asset('js/jquery.js?ver=1.12.5') }}'></script>
+<script type='text/javascript' src='{{ asset('js/jquery.arcticmodal-0.3.min.js') }}'></script>
+<script type='text/javascript' src='{{ asset('js/scripts.min.js') }}'></script>
+<script src="{{ asset('js/scripts.js?ver=1.0.14') }}"></script>

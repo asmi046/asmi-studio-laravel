@@ -13,7 +13,7 @@
         <div class="box-modal_close arcticmodal-close">закрыть</div>
 				
 		<div class = "wraper">
-			<img class = "box_img" src = "img/girl-coll.jpg">	
+			<img class = "box_img" src = "{{ asset('img/girl-coll.jpg') }}">	
 			
 		</div>
 			

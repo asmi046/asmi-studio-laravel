@@ -1,7 +1,7 @@
 @extends('layouts.all')
 
-@section('title', "Портфолио и кейсы нашей компании - Asmi-Studio")
-@section('description', "Проекты по разработке сайтов, редизайну и web программированию. Все кейсы нашей компании с подробным описанием.")
+@section('title', $info[0]->seo_title)
+@section('description', $info[0]->seo_description)
 
 @section('content')
     <section class = "portfolio_section">
@@ -14,7 +14,7 @@
                     <h1>{{$info[0]->name}}</h1>
                     <p>{{$info[0]->content}}</p>
                     <p>
-                    <span data-form = "Сайт каталог для магазина 1-й Военторг" class = "allBtn unisend_win">Хочу так же</span>
+                    <span data-form = "{{$info[0]->name}}" class = "allBtn unisend_win">Хочу так же</span>
                     </p>
                 </div>
                 <div class = "p_picture">
@@ -25,10 +25,10 @@
             <div class = "center portfolio_all portfolio_colors">
                 <h2>Цветовое решение</h2>
                 <div class = "clrWraper">
-                    <div class = "colorBlk" style = "background-color:#ffcb04;">#ffcb04</div>
-                    <div class = "colorBlk" style = "background-color:#FFFFFF; border: 1px solid #28475C;">#FFFFFF</div>
-                    <div class = "colorBlk" style = "background-color:#005d42;color: #FFFFFF;">#005d42</div>
-                    <div class = "colorBlk" style = "background-color:#c41c35;color: white;">#c41c35</div>
+                    <div class = "colorBlk" style = "background-color:{{$info[0]->color1}};">{{$info[0]->color1}}</div>
+                    <div class = "colorBlk" style = "background-color:{{$info[0]->color2}}; border: 1px solid #28475C;">{{$info[0]->color2}}</div>
+                    <div class = "colorBlk" style = "background-color:{{$info[0]->color3}};color: #FFFFFF;">{{$info[0]->color3}}</div>
+                    <div class = "colorBlk" style = "background-color:{{$info[0]->color4}};color: white;">{{$info[0]->color4}}</div>
                 </div>
             </div>
             
