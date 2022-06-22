@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('portfolio_posts', function (Blueprint $table) {
             $table->id();
             $table->timestamp('created_at')->useCurrent();
+            $table->integer('order');
+            $table->string('url', 200)->nullable();
             $table->string('name', 100);
             $table->string('image_folder_name', 50);
             $table->string('seo_title', 100);

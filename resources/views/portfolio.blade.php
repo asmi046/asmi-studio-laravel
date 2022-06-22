@@ -14,10 +14,9 @@
             <div class = "all_portfolio_wraper"  >
                 @foreach ($portfolio as $item)
                         
-                    <a href = "#" class = "portfolio_blk" style  = "background-image: url(img/portfolio/{{ $item->image_folder_name }}/{{ $item->page_prev }});">
-                        <div class = "portfolio_descr"  style = "border-left: 15px solid #1b24ff;">
+                    <a href = "#" class = "portfolio_blk" style  = "background-image: url(img/portfolio/{{ $item->image_folder_name }}/{{ $item->oblozgka }});">
+                        <div class = "portfolio_descr"  style = "border-left: 15px solid {{ $item->color1 }};">
                                 <h2>{{ $item->name }}</h2>
-                                <span>Сайт с посадочными страницами, регистрацией через соцсети и личным кабинетом </span>
                         </div>
                     </a>
 
