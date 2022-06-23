@@ -24,6 +24,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             PortfolioPostSeeder::class,
             PortfolioPostImageSeeder::class,
+
+            autotishSeeder::class,
+            rassaSeeder::class,
+            zasorovNetSeeder::class,
         ]);
     }
 }

@@ -51,13 +51,5 @@ class PortfolioPostImageSeeder extends Seeder
                 "img_alt"  => ''
             ]);
 
-            DB::table("portfolio_post_images")->insert(
-                [
-                    "post_name" => 'autotish',
-                    "razdel_name" => 'Презентация',
-                    "img" => 'autotish-nature-2.webp',
-                    "img_title" => '',
-                    "img_alt"  => ''
-                ]);
     }
 }
