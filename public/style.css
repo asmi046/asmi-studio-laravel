@@ -815,7 +815,6 @@ section {
     border-radius: 125px;
 }
 	
-}
 
 .vy_mi_box_elem h3 {}
 .vy_mi_box_elem .vy_mi_txt {
@@ -1372,7 +1371,7 @@ footer .content .fblk ul li a{
     box-shadow: 0 0px 6px 0px #777;
 }
 
-.portfolio_mobile .p_picture {
+.portfolio_mobile img {
     width: 60%;
 }
 

@@ -11,7 +11,6 @@ class PortfolioPostImage extends Model
 
     protected $fillable = [
         "created_at",
-        "portfolio_post_id",
         "post_name",
         "razdel_name",
         "img",

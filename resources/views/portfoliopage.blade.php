@@ -32,7 +32,14 @@
                 </div>
             </div>
             
-            
+            @foreach ($img as $key => $value)
+                <div class = "center portfolio_all @if ($key === "Адаптация под мобильные устройства") portfolio_mobile @else portfolio_image @endif">
+                    <h2>{{$key}}</h2>
+                    @foreach ($value as $im)
+                        <img src = "{{asset('img/portfolio/'.$im->post_name.'/'.$im->img)}}">
+                    @endforeach
+                </div>
+            @endforeach
             
             
         </div>

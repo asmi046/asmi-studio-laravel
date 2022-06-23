@@ -10,8 +10,18 @@ class PortfolioPageController extends Controller
     public function portfolioportfolio_page($pagename) {
 
         $portfolio = PortfolioPost::where('image_folder_name', $pagename)->take(1)->get();
-        $images = PortfolioPost::find(1)->portfolio_post_images()->get();
+        $images = PortfolioPost::where('image_folder_name', $pagename)->first()->portfolio_post_images;
         
-        return view('portfoliopage', ["info" => $portfolio]);
+        
+        $img_array = [];
+
+        foreach ($images as $el) {
+            $img_array[$el->razdel_name][] = $el;
+        }
+        
+        // dd($pagename);
+        // dd($images);
+        
+        return view('portfoliopage', ["info" => $portfolio, "img" => $img_array]);
     }
 }
