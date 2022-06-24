@@ -49,7 +49,7 @@ class PortfolioPostSeeder extends Seeder
                     'color3' => '#848f92',
                     'color4' => '#144970',
                     'oblozgka' => 'autotish-obl.jpg',
-                    'page_prev' => 'autotish-obl.webp' 
+                    'page_prev' => 'autotish-present.webp' 
                 ]);
 
             DB::table("portfolio_posts")->insert(
@@ -458,7 +458,7 @@ class PortfolioPostSeeder extends Seeder
                     'color3' => '#e8e9ed',
                     'color4' => '#37363b',
                     'oblozgka' => 'tabula-obl.webp',
-                    'page_prev' => 'tabula-present.webp' 
+                    'page_prev' => 'present.webp' 
                 ]);
 
             DB::table("portfolio_posts")->insert(
@@ -527,6 +527,23 @@ class PortfolioPostSeeder extends Seeder
                     'color4' => '#37363b',
                     'oblozgka' => 'zasorovnet-obl.webp',
                     'page_prev' => 'zasorovnet-present.webp' 
+                ]);
+
+            DB::table("portfolio_posts")->insert(
+                [
+                    'order' => 32,
+                    'url' => '',
+                    'name' => 'Разработка сайта магазина Карамельная мануфактура',
+                    'image_folder_name' => 'caramel',
+                    'seo_title' => 'Кейс: Разработка сайта авторской мастерской Карамельная Мануфактура - Asmi-Studio',
+                    'seo_description' => 'Проект по созданию сайта для магазина карамели ручной работы Карамельная Мануфактура. Разработка интернет-магазина в Курске',
+                    'content' => 'В рамках проекта создан сайт компании на котором размещена информация о деятельности и добавлен раздел с интернет магазином карамели ручной работы.',
+                    'color1' => '#f03c8e',
+                    'color2' => '#FFFFFF',
+                    'color3' => '#2caac0',
+                    'color4' => '#bfe4ea',
+                    'oblozgka' => 'caramel-obl.webp',
+                    'page_prev' => 'caramel-present.webp' 
                 ]);
     }
 }

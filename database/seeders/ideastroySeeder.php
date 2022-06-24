@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 
 use DB;
 
-class autotishSeeder extends Seeder
+class ideastroySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,38 +18,48 @@ class autotishSeeder extends Seeder
     {
         DB::table("portfolio_post_images")->insert(
             [
-                "post_name" => 'autotish',
+                "post_name" => 'ideastroy',
                 "razdel_name" => 'Главная страница',
-                "img" => 'autotish-main.webp',
+                "img" => 'ideastroy-main.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
         
          DB::table("portfolio_post_images")->insert(
              [
-                 "post_name" => 'autotish',
+                 "post_name" => 'ideastroy',
                  "razdel_name" => 'Адаптация под мобильные устройства',
-                 "img" => 'autotish-mob.webp',
+                 "img" => 'ideastroy-mob.webp',
                  "img_title" => '',
                  "img_alt"  => ''
              ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
-               "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-1.webp',
+               "post_name" => 'ideastroy',
+               "razdel_name" => 'Раздел О компании',
+               "img" => 'ideastroy-about.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
-               "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-2.webp',
+               "post_name" => 'ideastroy',
+               "razdel_name" => 'Раздел Контакты',
+               "img" => 'ideastroy-contacts.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
+
+        DB::table("portfolio_post_images")->insert(
+           [
+               "post_name" => 'ideastroy',
+               "razdel_name" => 'Презентация',
+               "img" => 'ideastroy-nature-is.webp',
+               "img_title" => '',
+               "img_alt"  => ''
+           ]);
+
     }
 }

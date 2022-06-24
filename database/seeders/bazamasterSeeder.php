@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 
 use DB;
 
-class autotishSeeder extends Seeder
+class bazamasterSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,36 +18,45 @@ class autotishSeeder extends Seeder
     {
         DB::table("portfolio_post_images")->insert(
             [
-                "post_name" => 'autotish',
+                "post_name" => 'bazamaster',
                 "razdel_name" => 'Главная страница',
-                "img" => 'autotish-main.webp',
+                "img" => 'bazamaster-main.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
         
+        DB::table("portfolio_post_images")->insert(
+                [
+                    "post_name" => 'bazamaster',
+                    "razdel_name" => 'Страница каталога',
+                    "img" => 'bazamaster-kat.webp',
+                    "img_title" => '',
+                    "img_alt"  => ''
+                ]);
+
          DB::table("portfolio_post_images")->insert(
              [
-                 "post_name" => 'autotish',
+                 "post_name" => 'bazamaster',
                  "razdel_name" => 'Адаптация под мобильные устройства',
-                 "img" => 'autotish-mob.webp',
+                 "img" => 'bazamaster-mob.webp',
                  "img_title" => '',
                  "img_alt"  => ''
              ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
+               "post_name" => 'bazamaster',
                "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-1.webp',
+               "img" => 'bazamaster-nature.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
+               "post_name" => 'bazamaster',
                "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-2.webp',
+               "img" => 'bazamaster-nature1.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);

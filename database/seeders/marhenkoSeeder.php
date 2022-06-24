@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 
 use DB;
 
-class autotishSeeder extends Seeder
+class marhenkoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,38 +18,39 @@ class autotishSeeder extends Seeder
     {
         DB::table("portfolio_post_images")->insert(
             [
-                "post_name" => 'autotish',
+                "post_name" => 'marhenko',
                 "razdel_name" => 'Главная страница',
-                "img" => 'autotish-main.webp',
+                "img" => 'marhenko-Screen-1.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
         
          DB::table("portfolio_post_images")->insert(
              [
-                 "post_name" => 'autotish',
+                 "post_name" => 'marhenko',
                  "razdel_name" => 'Адаптация под мобильные устройства',
-                 "img" => 'autotish-mob.webp',
+                 "img" => 'marhenko-mob.webp',
                  "img_title" => '',
                  "img_alt"  => ''
              ]);
+        
+        DB::table("portfolio_post_images")->insert(
+                [
+                    "post_name" => 'marhenko',
+                    "razdel_name" => 'Страница блога',
+                    "img" => 'marhenko-Screen-2.webp',
+                    "img_title" => '',
+                    "img_alt"  => ''
+                ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
+               "post_name" => 'marhenko',
                "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-1.webp',
+               "img" => 'marhenko-nature_NM.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
 
-        DB::table("portfolio_post_images")->insert(
-           [
-               "post_name" => 'autotish',
-               "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-2.webp',
-               "img_title" => '',
-               "img_alt"  => ''
-           ]);
     }
 }

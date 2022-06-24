@@ -28,6 +28,28 @@ class DatabaseSeeder extends Seeder
             autotishSeeder::class,
             rassaSeeder::class,
             zasorovNetSeeder::class,
+            boevaSeeder::class,
+            caramelSeeder::class,
+            clrpdsSeeder::class,
+            dmSeeder::class,
+            donetskayaSeeder::class,
+            easycomnewSeeder::class,
+            enchiSeeder::class,
+            evatonSeeder::class,
+            grandSeeder::class,
+            ideastroySeeder::class,
+            interiernoSeeder::class,
+            kuzdvorSeeder::class,
+
+            lightsnabSeeder::class,
+            makmolSeeder::class,
+            marhenkoSeeder::class,
+            bazamasterSeeder::class,
+            
+            naSeeder::class,
+            nesterovaSeeder::class,
+            onlinemediaSeeder::class,
+            potapovSeeder::class,
         ]);
     }
 }

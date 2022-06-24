@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 
 use DB;
 
-class autotishSeeder extends Seeder
+class caramelSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,36 +18,54 @@ class autotishSeeder extends Seeder
     {
         DB::table("portfolio_post_images")->insert(
             [
-                "post_name" => 'autotish',
+                "post_name" => 'caramel',
                 "razdel_name" => 'Главная страница',
-                "img" => 'autotish-main.webp',
+                "img" => 'caramel-main.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
         
          DB::table("portfolio_post_images")->insert(
              [
-                 "post_name" => 'autotish',
+                 "post_name" => 'caramel',
                  "razdel_name" => 'Адаптация под мобильные устройства',
-                 "img" => 'autotish-mob.webp',
+                 "img" => 'caramel-mob.webp',
                  "img_title" => '',
                  "img_alt"  => ''
              ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
-               "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-1.webp',
+               "post_name" => 'caramel',
+               "razdel_name" => 'Cтраница каталога',
+               "img" => 'caramel-cat.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
+               "post_name" => 'caramel',
+               "razdel_name" => 'Cтраница товара',
+               "img" => 'caramel-tov.webp',
+               "img_title" => '',
+               "img_alt"  => ''
+           ]);
+
+        DB::table("portfolio_post_images")->insert(
+           [
+               "post_name" => 'caramel',
                "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-2.webp',
+               "img" => 'caramel-nature1.webp',
+               "img_title" => '',
+               "img_alt"  => ''
+           ]);
+
+        DB::table("portfolio_post_images")->insert(
+           [
+               "post_name" => 'caramel',
+               "razdel_name" => 'Презентация',
+               "img" => 'caramel-nature2.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
