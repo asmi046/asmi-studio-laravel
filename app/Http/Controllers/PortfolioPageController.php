@@ -18,10 +18,6 @@ class PortfolioPageController extends Controller
         foreach ($images as $el) {
             $img_array[$el->razdel_name][] = $el;
         }
-        
-        // dd($pagename);
-        // dd($images);
-        
         return view('portfoliopage', ["info" => $portfolio, "img" => $img_array]);
     }
 }
