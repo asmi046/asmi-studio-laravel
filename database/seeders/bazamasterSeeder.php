@@ -56,7 +56,7 @@ class bazamasterSeeder extends Seeder
            [
                "post_name" => 'bazamaster',
                "razdel_name" => 'Презентация',
-               "img" => 'bazamaster-nature1.webp',
+               "img" => 'bazamaster-nature2.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);

@@ -39,7 +39,7 @@ class enchiSeeder extends Seeder
             [
                 "post_name" => 'enchi',
                 "razdel_name" => 'Страница услуги',
-                "img" => 'enchi-produkt.webp',
+                "img" => 'enchi-product.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);

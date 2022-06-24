@@ -20,7 +20,7 @@ class naSeeder extends Seeder
             [
                 "post_name" => 'na',
                 "razdel_name" => 'Главная страница',
-                "img" => 'na-main.webp',
+                "img" => 'potapov-screen1.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
@@ -37,7 +37,7 @@ class naSeeder extends Seeder
         DB::table("portfolio_post_images")->insert(
             [
                 "post_name" => 'na',
-                "razdel_name" => 'Страница услуги',
+                "razdel_name" => 'Страница товара',
                 "img" => 'na-tov.webp',
                 "img_title" => '',
                 "img_alt"  => ''

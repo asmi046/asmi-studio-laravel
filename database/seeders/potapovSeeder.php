@@ -20,7 +20,7 @@ class potapovSeeder extends Seeder
             [
                 "post_name" => 'potapov',
                 "razdel_name" => 'Главная страница',
-                "img" => 'potapov-main.webp',
+                "img" => 'potapov-screen1.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);

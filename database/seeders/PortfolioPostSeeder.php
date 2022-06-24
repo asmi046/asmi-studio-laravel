@@ -185,7 +185,7 @@ class PortfolioPostSeeder extends Seeder
                     'color3' => '#e0e1e3',
                     'color4' => '#1a1818',
                     'oblozgka' => 'grand-obl.webp',
-                    'page_prev' => 'grand-present.webp' 
+                    'page_prev' => 'grand-present.jpg' 
                 ]);
 
             DB::table("portfolio_posts")->insert(

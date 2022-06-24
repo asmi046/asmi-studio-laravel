@@ -38,7 +38,7 @@ class interiernoSeeder extends Seeder
            [
                "post_name" => 'interierno',
                "razdel_name" => 'Презентация',
-               "img" => 'interierno-nature-inter.webp',
+               "img" => 'interierno-natur-inter.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
