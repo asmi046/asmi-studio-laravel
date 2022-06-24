@@ -50,6 +50,12 @@ class DatabaseSeeder extends Seeder
             nesterovaSeeder::class,
             onlinemediaSeeder::class,
             potapovSeeder::class,
+
+            wegoSeeder::class,
+            unarmySeeder::class,
+            selengaSeeder::class,
+            samosvalSeeder::class,
+            samayaSeeder::class,
         ]);
     }
 }
