@@ -20,7 +20,7 @@ class rassaSeeder extends Seeder
             [
                 "post_name" => 'tabula',
                 "razdel_name" => 'Главная страница',
-                "img" => 'tabula-main.webp',
+                "img" => 'main-tabula.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
@@ -29,16 +29,16 @@ class rassaSeeder extends Seeder
              [
                  "post_name" => 'tabula',
                  "razdel_name" => 'Адаптация под мобильные устройства',
-                 "img" => 'tabula-mob.webp',
+                 "img" => 'mob.webp',
                  "img_title" => '',
                  "img_alt"  => ''
              ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'zasorovnet',
+               "post_name" => 'tabula',
                "razdel_name" => 'Презентация',
-               "img" => 'tabula-nature-tab.webp',
+               "img" => 'nature-tab.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);

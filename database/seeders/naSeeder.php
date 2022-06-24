@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 
 use DB;
 
-class autotishSeeder extends Seeder
+class naSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,36 +18,54 @@ class autotishSeeder extends Seeder
     {
         DB::table("portfolio_post_images")->insert(
             [
-                "post_name" => 'autotish',
+                "post_name" => 'na',
                 "razdel_name" => 'Главная страница',
-                "img" => 'autotish-main.webp',
+                "img" => 'na-main.webp',
+                "img_title" => '',
+                "img_alt"  => ''
+            ]);
+        
+        DB::table("portfolio_post_images")->insert(
+            [
+                "post_name" => 'na',
+                "razdel_name" => 'Страница каталога',
+                "img" => 'na-cat.webp',
+                "img_title" => '',
+                "img_alt"  => ''
+            ]);
+        
+        DB::table("portfolio_post_images")->insert(
+            [
+                "post_name" => 'na',
+                "razdel_name" => 'Страница услуги',
+                "img" => 'na-tov.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
         
          DB::table("portfolio_post_images")->insert(
              [
-                 "post_name" => 'autotish',
+                 "post_name" => 'na',
                  "razdel_name" => 'Адаптация под мобильные устройства',
-                 "img" => 'autotish-mob.webp',
+                 "img" => 'na-mob.webp',
                  "img_title" => '',
                  "img_alt"  => ''
              ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
+               "post_name" => 'na',
                "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-1.webp',
+               "img" => 'na-nature1.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
+               "post_name" => 'na',
                "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-2.webp',
+               "img" => 'na-nature2.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);

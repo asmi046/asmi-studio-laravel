@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 
 use DB;
 
-class autotishSeeder extends Seeder
+class onlinemediaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,38 +18,30 @@ class autotishSeeder extends Seeder
     {
         DB::table("portfolio_post_images")->insert(
             [
-                "post_name" => 'autotish',
+                "post_name" => 'onlinemedia',
                 "razdel_name" => 'Главная страница',
-                "img" => 'autotish-main.webp',
+                "img" => 'onlinemedia-main.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
         
          DB::table("portfolio_post_images")->insert(
              [
-                 "post_name" => 'autotish',
+                 "post_name" => 'onlinemedia',
                  "razdel_name" => 'Адаптация под мобильные устройства',
-                 "img" => 'autotish-mob.webp',
+                 "img" => 'onlinemedia-mob.webp',
                  "img_title" => '',
                  "img_alt"  => ''
              ]);
 
         DB::table("portfolio_post_images")->insert(
            [
-               "post_name" => 'autotish',
+               "post_name" => 'onlinemedia',
                "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-1.webp',
+               "img" => 'onlinemedia-nature.webp',
                "img_title" => '',
                "img_alt"  => ''
            ]);
 
-        DB::table("portfolio_post_images")->insert(
-           [
-               "post_name" => 'autotish',
-               "razdel_name" => 'Презентация',
-               "img" => 'autotish-nature-2.webp',
-               "img_title" => '',
-               "img_alt"  => ''
-           ]);
     }
 }
