@@ -389,7 +389,7 @@ class PortfolioPostSeeder extends Seeder
                     'color2' => '#FFFFFF',
                     'color3' => '#424244',
                     'color4' => '#e8e9eb',
-                    'oblozgka' => 'propuska-obl.webp',
+                    'oblozgka' => 'propuska-obl.jpg',
                     'page_prev' => 'propuska-present.webp' 
                 ]);
 

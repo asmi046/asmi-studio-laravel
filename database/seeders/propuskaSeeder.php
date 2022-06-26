@@ -16,6 +16,32 @@ class propuskaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table("portfolio_post_images")->insert(
+            [
+                "post_name" => 'propuska',
+                "razdel_name" => 'Главная страница',
+                "img" => 'propuska-screen-pm.webp',
+                "img_title" => '',
+                "img_alt"  => ''
+            ]);
+        
+         DB::table("portfolio_post_images")->insert(
+             [
+                 "post_name" => 'propuska',
+                 "razdel_name" => 'Адаптация под мобильные устройства',
+                 "img" => 'propuska-mob.webp',
+                 "img_title" => '',
+                 "img_alt"  => ''
+             ]);
+
+        DB::table("portfolio_post_images")->insert(
+           [
+               "post_name" => 'propuska',
+               "razdel_name" => 'Презентация',
+               "img" => 'propuska-nature-pm.webp',
+               "img_title" => '',
+               "img_alt"  => ''
+           ]);
+
     }
 }

@@ -55,8 +55,12 @@ class DatabaseSeeder extends Seeder
             unarmySeeder::class,
             selengaSeeder::class,
             samosvalSeeder::class,
-            samayaSeeder::class
+            samayaSeeder::class,
+
+            verbenaSeeder::class,
+            propuskaSeeder::class,
             
+
         ]);
     }
 }

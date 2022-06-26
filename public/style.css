@@ -1221,8 +1221,8 @@ footer .content .fblk ul li a{
 }
 
 .portfolio_blk {
-	width:49%;
-	height:300px;
+	width:32%;
+	height:197px;
 	background-size: cover;
 	margin-bottom:2%;
 	overflow:hidden;
@@ -1239,7 +1239,7 @@ footer .content .fblk ul li a{
 	display:flex;
 	text-align:left;
 	flex-direction:column;
-	margin-left:-110%;
+	margin-left:-120%;
 	
 	-webkit-transition: All 0.5s ease;
 	-moz-transition: All 0.5s ease;
