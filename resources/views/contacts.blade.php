@@ -33,6 +33,24 @@
                 ОГРН: 313463235300020<br/>
             </p>
 
+            <h2>Обратная связь</h2>
+            <form method="POST" action="{{ route("send_contact_form") }}">
+                @csrf
+                <input type="text" name = "name" placeholder="Введите ваше имя">
+
+                @error('name')
+                    <p class = "formError">{{$message}}</p>
+                @enderror
+
+                <input type="tel" name = "phone" placeholder="Введите телефон">
+                
+                @error('phone')
+                    <p class = "formError">{{$message}}</p>
+                @enderror
+
+                <button type = "submit" class = "button">Отправить</button>
+            </form>
+
             <h2>Как добраться</h2>
             <div id = "mapLine" class = "mapLine"></div>
             
