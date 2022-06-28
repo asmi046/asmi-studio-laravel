@@ -1248,7 +1248,7 @@ footer .content .fblk ul li a{
 	transition: All 0.5s ease;
 	
 	text-decoration:none!important;
-	border-left: 15px solid orange;
+	/* border-left: 15px solid orange; */
 	padding-left: 34px;
 }
 

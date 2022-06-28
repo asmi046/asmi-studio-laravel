@@ -15,7 +15,7 @@
                 @foreach ($portfolio as $item)
                         
                     <a href = "{{ route('portfolio_page', ['pagename' => $item->image_folder_name ]) }}" class = "portfolio_blk" style  = "background-image: url(img/portfolio/{{ $item->image_folder_name }}/{{ $item->oblozgka }});">
-                        <div class = "portfolio_descr"  style = "border-left: 15px solid {{ $item->color1 }};">
+                        <div class = "portfolio_descr"  style = "background-color: {{ $item->color1 }}e5;">
                                 <h2>{{ $item->name }}</h2>
                         </div>
                     </a>

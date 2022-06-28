@@ -13,7 +13,7 @@ class ContactForm extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class ContactForm extends FormRequest
     public function rules()
     {
         return [
-            'text' => ['required', 'string'],
+            'name' => ['required', 'string'],
             'phone' => ['required', 'string']
         ];
     }
