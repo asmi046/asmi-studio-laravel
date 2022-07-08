@@ -56,11 +56,11 @@ input[type=tel],
 input[type=email],
 input[type=pas],
 textarea {
-	width: 95%;
+	width: calc(100% - 32px);
     border: 1px solid #b7b7b7;
     border-radius: 5px;
-    min-height: 35px;
-    padding: 1% 2%;
+    min-height: 30px;
+    padding: 5px 15px;
     margin: 5px 0;
 }
 

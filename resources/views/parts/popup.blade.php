@@ -1,11 +1,11 @@
-<div class="popup popup_callback">
+<div class="popup popup_consult">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close" aria-label="Закрыть модальное окно"></div> 
 			<div class="popup__item d-flex">
 				<div class="popup__img">
 					<picture>
-						<source srcset="<?php echo get_template_directory_uri(); ?>/img/popup.webp" type="image/webp"><img src="<?php echo get_template_directory_uri(); ?>/img/popup.jpg?_v=1632757662937" alt="">
+						<source srcset="{{asset('/img/popup.webp')}}" type="image/webp"><img src="{{asset('/img/popup.jpg')}}" alt="">
 					</picture>
 				</div>
 				<div class="popup__form-block">  
@@ -21,13 +21,13 @@
 
 							<div class="form__line">
 								<input type="hidden" name = "form_name" data-valuem = "Название формы" value = "Заказать звонок">
-								<input type="hidden" name = "form_address" data-valuem = "Адрес страницы" value = "<? echo (is_home())?"https://forestsea.ru/kontakty":get_the_permalink()?>">
+								<input type="hidden" name = "form_address" data-valuem = "Адрес страницы" value = "">
 								<input required type="text" name="name" data-valuem = "Имя" placeholder="Имя" class="popup__form-input input">
 								<input required type="tel" name="tel" data-valuem = "Телефон" placeholder="Телефон" class="popup__form-input input _phone"> 
 							</div>
 							<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></p>
-							<button type = "submit" class="popup__form-btn btn new_send_btn" data-formid = "request_call">Заказать</button>
+							<button type = "submit" class="button" data-formid = "request_call">Заказать</button>
 							</div>
 						</form>
 				</div>

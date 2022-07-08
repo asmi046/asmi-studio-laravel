@@ -31,7 +31,8 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="#F7F7F7">
         <link rel="stylesheet" href="/css/slick.css">
         <link rel="stylesheet" href="/css/slick-theme.css">
-        <link rel="stylesheet" href="/style.css?v=1.0.19">
+        <link rel="stylesheet" href="{{asset('css/popup.css')}}">
+        <link rel="stylesheet" href="/style.css">
 
         <link rel="apple-touch-icon" sizes="256x256" href="/img/favicon/icon256.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/icon32.png">
