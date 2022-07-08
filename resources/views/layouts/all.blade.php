@@ -58,6 +58,7 @@
 
     </head>
     <body>
+        @include('parts.popup')
         @include('parts.header_menu')
         
         @include('parts.windows')

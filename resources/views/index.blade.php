@@ -17,7 +17,7 @@
             </ul>
             
             <div class = "main_banner_buttons_wrapper">
-                <div class = "button unisend_win" data-form="Заявка с баннера">Мне нужен сайт</div>
+                <a href = "#consult" class = "button _popup-link" data-form="Заявка с баннера">Мне нужен сайт</a>
                 <a href = "#pric" onclick = "to_block(this); e.stopPropagation();" class = "button button-white">Цены на услуги</a>
             </div>
             
