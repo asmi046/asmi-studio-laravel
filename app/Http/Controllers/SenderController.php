@@ -12,7 +12,6 @@ class SenderController extends Controller
 {
     public function send_contact_form(ContactForm $request) {
         Mail::to("asmi046@gmail.com")->send(new ContactFormMail($request));
-
         return redirect(route("home"));
     }
 }

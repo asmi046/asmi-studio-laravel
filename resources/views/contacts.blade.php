@@ -36,6 +36,10 @@
             <h2>Обратная связь</h2>
             <form method="POST" action="{{ route("send_contact_form") }}">
                 @csrf
+
+                <input type="hidden" name = "form_name" value = "Форма в контактах">
+				<input type="hidden" name = "form_address"  value = "{{url()->current()}}">
+
                 <input type="text" name = "name" placeholder="Введите ваше имя">
 
                 @error('name')

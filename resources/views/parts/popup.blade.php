@@ -12,18 +12,21 @@
 					<h2>Заказать звонок</h2> 
 
 						<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-						<form id="request_call" class="form">
-							
-							<div class="SendetMsg form_msg" style="display:none;"> 
-								Ваше сообщение успешно отправлено.
-							</div>
+						<form id="request_call" action="{{ route("send_contact_form") }}" class="form">
+							@csrf
 							<div class="headen_form_blk">
 
 							<div class="form__line">
 								<input type="hidden" name = "form_name" data-valuem = "Название формы" value = "Заказать звонок">
 								<input type="hidden" name = "form_address" data-valuem = "Адрес страницы" value = "">
-								<input required type="text" name="name" data-valuem = "Имя" placeholder="Имя" class="popup__form-input input">
-								<input required type="tel" name="tel" data-valuem = "Телефон" placeholder="Телефон" class="popup__form-input input _phone"> 
+								<input required type="text" name="name" placeholder="Имя" class="popup__form-input input">
+								@error('name')
+									<p class = "formError">{{$message}}</p>
+								@enderror
+								<input required type="tel" name="phone" placeholder="Телефон" class="popup__form-input input _phone"> 
+								@error('phone')
+									<p class = "formError">{{$message}}</p>
+								@enderror
 							</div>
 							<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></p>
