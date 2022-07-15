@@ -37,3 +37,4 @@
 <script type='text/javascript' src='{{ asset('js/scripts.min.js') }}'></script>
 <script src="{{ asset('js/scripts.js?ver=1.0.14') }}"></script>
 <script type='text/javascript' src="{{ asset('js/popup.js') }}"></script>
+<script type='text/javascript' src="{{ asset('js/goto.js') }}"></script>

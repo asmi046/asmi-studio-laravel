@@ -12,7 +12,7 @@
 					<h2>Заказать звонок</h2> 
 
 						<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-						<form id="request_call" action="{{ route("send_contact_form") }}" class="form">
+						<form id="request_call" action="{{ route("send_contact_form") }}" class="form" method="POST">
 							@csrf
 							<div class="headen_form_blk">
 

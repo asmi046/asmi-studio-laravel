@@ -29,7 +29,11 @@ class ContactFormMail extends Mailable
      */
     public function build()
     {
-        return $this->view('mails.allMail')->with([
+        return $this->from("asmi-work046@yandex.ru","Asmi-Studio")
+            ->subject("Сообщение с Asmi-Studio")
+            ->replyTo('info@asmi-studio.ru', 'Asmi-Studio - разработка сайтов')
+            ->view('mails.allMail')
+            ->with([
             "formData" => $this->formData
         ]);
     }

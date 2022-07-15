@@ -7,9 +7,9 @@
     <section class = "main_banner" style="background-image: url(img/komp-bg-desctop.webp);">
         <div class = "main_banner_info">
             <a class = "logo" href = "/"></a>
-            <h1>Продающие сайты для бизнеса</h1>
-            <span class = "subh1">Проектируем, рисуем, программируем</span>
-            <span class = "subh1_pt">Полный спектр услуг в сфере web разработки: Разработка сайтов, расширение функционала, оптимизация для устройств, увеличение скорости загрузки и т. д.</span>
+            <h1>Сайты для бизнеса а не для галочьки</h1>
+            <span class = "subh1">Мы сделаем из Вашей идеи эффективный сайт приносящий прибыль</span>
+            {{-- <span class = "subh1_pt">Мы не разрабатываем сайты мы делае инструменты решающие задачи Вашего бизнеса. </span> --}}
             <ul>
                 <li>КАЧЕСТВЕННО</li>
                 <li>БЫСТРО</li>
@@ -17,8 +17,8 @@
             </ul>
             
             <div class = "main_banner_buttons_wrapper">
-                <a href = "#consult" class = "button _popup-link" data-form="Заявка с баннера">Мне нужен сайт</a>
-                <a href = "#pric" onclick = "to_block(this); e.stopPropagation();" class = "button button-white">Цены на услуги</a>
+                <a href = "#consult" class = "button _popup-link" data-form="Заявка с баннера">Обсудить проект</a>
+                <a href = "#pric" onclick = "_goto(this); e.stopPropagation();" class = "button button-white">Сориентироваться в ценах</a>
             </div>
             
         </div>

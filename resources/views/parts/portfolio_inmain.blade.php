@@ -1,12 +1,9 @@
 <section id = "prtfolio" class = "web_prtfolio">
     <h2>Примеры работ:</h2>
     <div class = "web_prtfolio_box">
-        <a href = "#" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/la.webp);"></a>
-        <a href = "#" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/vt.webp);"></a>
-        <a href = "#" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/kd.webp);"></a>
-        <a href = "#" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/mast.webp);"></a>
-        <a href = "#" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/tabula/tabula-obl.webp);"></a>
-        <a href = "#" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/onlinemedia/onlinemedia-obl.webp);"></a>
+        @foreach ($portfolio as $item)
+            <a href = "{{ route('portfolio_page', ['pagename' => $item->image_folder_name ]) }}" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/{{ $item->image_folder_name }}/{{ $item->oblozgka }});"></a>
+        @endforeach
     </div>
     <div class = "gray_blk_in_section">
         <div class = "content">
