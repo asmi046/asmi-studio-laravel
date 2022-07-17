@@ -585,7 +585,7 @@ section h2 {
 }
 
 .uslugi_box_elem .price{ 
-	margin-bottom:30px;
+	margin-bottom:0;
 	font-size:18px;
 	font-weight:500;
 }

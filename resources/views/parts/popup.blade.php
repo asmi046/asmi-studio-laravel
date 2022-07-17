@@ -17,8 +17,9 @@
 							<div class="headen_form_blk">
 
 							<div class="form__line">
-								<input type="hidden" name = "form_name" data-valuem = "Название формы" value = "Заказать звонок">
-								<input type="hidden" name = "form_address" data-valuem = "Адрес страницы" value = "">
+								<input type="hidden" name = "form_name" value = "Заказать звонок">
+								<input type="hidden" name = "form_rasp" value = "По умолчанию">
+								<input type="hidden" name = "form_address" value = "{{url()->current()}}">
 								<input required type="text" name="name" placeholder="Имя" class="popup__form-input input">
 								@error('name')
 									<p class = "formError">{{$message}}</p>

@@ -38,6 +38,7 @@
                 @csrf
 
                 <input type="hidden" name = "form_name" value = "Форма в контактах">
+                <input type="hidden" name = "form_rasp" value = "Страница контактов">
 				<input type="hidden" name = "form_address"  value = "{{url()->current()}}">
 
                 <input type="text" name = "name" placeholder="Введите ваше имя">

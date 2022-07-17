@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
         popup_link[index].addEventListener('click', function (e) {
 			e.preventDefault();
             let item = popup_link[index].getAttribute('href').replace('#', '');
-            popup_open(item, '');
-			console.log(111)
+            popup_open(item, popup_link[index].dataset.h2, popup_link[index].dataset.rasp);
+			
 		})
     }
 
@@ -19,17 +19,18 @@ for (let index = 0; index < popups.length; index++) {
 	});
 }
 
-function popup_open(item, video = '') {
+function popup_open(item, message = '', raspol = '') {
 	let activePopup = document.querySelectorAll('.popup._active');
 	if (activePopup.length > 0) {
 		popup_close('', false);
 	}
 	let curent_popup = document.querySelector('.popup_' + item);
 	if (curent_popup) {
+
+		curent_popup.querySelector("h2").innerHTML = message
+		curent_popup.querySelector("input[name=form_name]").value = message
+		curent_popup.querySelector("input[name=form_rasp]").value = raspol
 		
-		// if (!document.querySelector('.menu__body._active')) {
-		// 	body_lock_add(500);
-		// }
 		curent_popup.classList.add('_active');
 		history.pushState('', '', '#' + item);
 	}
