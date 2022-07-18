@@ -1,15 +1,14 @@
-function to_block(elem) {
-	var elementClick = jQuery(elem).attr("href");
-	
-	var elementClick = elementClick.slice(elementClick.indexOf("#"));
-	console.log(elementClick);
-	
-		var destination = jQuery(elementClick).offset().top-45;
-		jQuery("html:not(:animated),body:not(:animated)").animate({
-		  scrollTop: destination
-		}, 1000);
-	return false;
+function number_format() {
+	let elements = document.querySelectorAll('.price_formator');
+	for (let elem of elements) {
+		elem.dataset.realPrice = elem.innerHTML;
+		elem.innerHTML = Number(elem.innerHTML).toLocaleString('ru-RU');
+	}
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+	number_format();
+});
 
 jQuery(document).ready(function($) { 
 

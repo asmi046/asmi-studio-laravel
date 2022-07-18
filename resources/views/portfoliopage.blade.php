@@ -14,7 +14,7 @@
                     <h1>{{$info[0]->name}}</h1>
                     <p>{{$info[0]->content}}</p>
                     <p>
-                    <span data-form = "{{$info[0]->name}}" class = "allBtn unisend_win">Хочу так же</span>
+                    <a href = "#consult" class = "button _popup-link" data-h2="Обсудить проект" data-rasp="Хочу так же проект - {{$info[0]->name}}">Хочу так же</a>
                     </p>
                 </div>
                 <div class = "p_picture">

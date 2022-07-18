@@ -10,51 +10,64 @@
             <div class = "breadcrumbs" id = "breadcrumbs">
                 <a href = "{{ route('home') }}">Главная</a> / <span>Контакты</span> 
             </div>
+
             <h1>Контакты</h1>
-            
-            <p>
-                <a href = "tel:+79036330801">+7 903 633 08 01</a>	
-            </p>
-            
-            <p>
-                <a href = "mailto:info@asmi-studio.ru">info@asmi-studio.ru</a>	
-            </p>
-            
-            
-            <div class = "socicon_in_footer socicon_in_footer_contact_page">
-                @include('parts.soc_lnk')
-            </div>	
-            
-            
-            <h2>Реквизиты</h2>
-            <p>
-                ИП Смирнов Андрей Алексеевич<br/>
-                ИНН: 463246349734<br/>
-                ОГРН: 313463235300020<br/>
-            </p>
 
-            <h2>Обратная связь</h2>
-            <form method="POST" action="{{ route("send_contact_form") }}">
-                @csrf
+            <div class="wrap2cel">
+                <div class="cell">
+                    <p>
+                        <a href = "tel:+79036330801">+7 903 633 08 01</a>	
+                    </p>
+                    
+                    <p>
+                        <a href = "mailto:info@asmi-studio.ru">info@asmi-studio.ru</a>	
+                    </p>
+                    
+                    
+                    <div class = "socicon_in_footer socicon_in_footer_contact_page">
+                        @include('parts.soc_lnk')
+                    </div>	
+                    
+                    
+                    <h2>Реквизиты</h2>
+                    <p>
+                        ИП Смирнов Андрей Алексеевич<br/>
+                        ИНН: 463246349734<br/>
+                        ОГРН: 313463235300020<br/>
+                    </p>                    
+                </div>
 
-                <input type="hidden" name = "form_name" value = "Форма в контактах">
-                <input type="hidden" name = "form_rasp" value = "Страница контактов">
-				<input type="hidden" name = "form_address"  value = "{{url()->current()}}">
+                <div class="cell">
+                    <h2>Обратная связь</h2>
+                    <form method="POST" action="{{ route("send_contact_form") }}">
+                        @csrf
+        
+                        <input type="hidden" name = "form_name" value = "Форма в контактах">
+                        <input type="hidden" name = "form_rasp" value = "Страница контактов">
+                        <input type="hidden" name = "form_address"  value = "{{url()->current()}}">
+        
+                        <input type="text" name = "name" placeholder="Введите ваше имя">
+        
+                        @error('name')
+                            <p class = "formError">{{$message}}</p>
+                        @enderror
+        
+                        <input type="tel" name = "phone" placeholder="Введите телефон">
+                        
+                        @error('phone')
+                            <p class = "formError">{{$message}}</p>
+                        @enderror
+        
+                        <button type = "submit" class = "button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            
+            
+            
 
-                <input type="text" name = "name" placeholder="Введите ваше имя">
 
-                @error('name')
-                    <p class = "formError">{{$message}}</p>
-                @enderror
-
-                <input type="tel" name = "phone" placeholder="Введите телефон">
-                
-                @error('phone')
-                    <p class = "formError">{{$message}}</p>
-                @enderror
-
-                <button type = "submit" class = "button">Отправить</button>
-            </form>
+            
 
             <h2>Как добраться</h2>
             <div id = "mapLine" class = "mapLine"></div>

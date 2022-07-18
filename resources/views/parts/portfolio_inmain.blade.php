@@ -2,7 +2,11 @@
     <h2>Примеры работ:</h2>
     <div class = "web_prtfolio_box">
         @foreach ($portfolio as $item)
-            <a href = "{{ route('portfolio_page', ['pagename' => $item->image_folder_name ]) }}" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/{{ $item->image_folder_name }}/{{ $item->oblozgka }});"></a>
+            <a href = "{{ route('portfolio_page', ['pagename' => $item->image_folder_name ]) }}" class = "web_prtfolio_box_elem" style = "background-image:url(img/portfolio/{{ $item->image_folder_name }}/{{ $item->oblozgka }});">
+                <div class = "portfolio_descr"  style = "background-color: {{ $item->color1 }}f1;">
+                    <h2>{{ $item->name }}</h2>
+                </div>
+            </a>
         @endforeach
     </div>
     <div class = "gray_blk_in_section">
@@ -14,8 +18,8 @@
                 </div>
                 
                 <div class = "btn">
-                    <div class = "button unisend_win" data-form="Заявка с блока Примеры работ">Заказать сайт</div>
-                    <a href = "#" class = "button button-white">Все портфолио</a>
+                    <a href="#consult" class="button _popup-link" data-h2="Обсудить прект" data-rasp="Кнопка в разделе портфолио на главной">Заказать сайт</a>
+                    <a href = "{{ route('portfolio') }}" class = "button button-white">Все портфолио</a>
                 </div>
             </div>
         </div>

@@ -35,9 +35,13 @@
             @include('parts.uslugi')
             
             <span class = "section_down_text">
-                <h3>Не знаете что Выбрать? </h3>
-                Напишите нам мы проконсультируем Вас абсолютно бесплатно и ответим <br/>на все интересующие Вас вопросы.
+                <h3>Не знаете что подойдет именно Вам? </h3>
+                Оставьте заявку мы проконсультируем Вас абсолютно бесплатно и ответим <br/>на все интересующие Вас вопросы.
             </span>
+
+            <div class = "element_to_center_wriper">
+                <a href = "#consult" class = "button _popup-link" data-h2="Получить консультацию" data-rasp="Кнопка в блоке цен">Получить консультацию</a>
+            </div>
         </div>
     </section>
 
@@ -47,7 +51,7 @@
             <div class = "cerecter_box">
                 <div class = "cerecter_box_elem">
                     <div class = "cerecter_box_elem_ch">
-                        <span class = "orang_text">+</span>12	
+                        <span class = "orang_text">+</span>14	
                     </div>
                     
                     <div class = "cerecter_box_elem_pt">
@@ -57,7 +61,7 @@
                 
                 <div class = "cerecter_box_elem">
                     <div class = "cerecter_box_elem_ch">
-                        <span class = "orang_text">+</span>500	
+                        <span class = "orang_text">+</span>700	
                     </div>
                     
                     <div class = "cerecter_box_elem_pt">
@@ -77,7 +81,7 @@
                 
                 <div class = "cerecter_box_elem">
                     <div class = "cerecter_box_elem_ch">
-                        <span class = "orang_text">+</span>25 000	
+                        <span class = "orang_text">+</span>45 000	
                     </div>
                     
                     <div class = "cerecter_box_elem_pt">
@@ -102,7 +106,7 @@
                 <span class = "info_text">Собственный сайт это новые возможности по привлечению клиентов  в любой бизнес.  Для Вас станут доступны все современные каналы  продвижения собственного продукта:  Контекстная реклама в Яндекс и Google, товарные агрегаторы, классическое SEO и т. д.</span>
                 <h3>Закажите сайт и развивайте свой бизнес!</h3>
             </div>
-            <div class = "button unisend_win" data-form="Заявка с блока Вашему бизнесу нужны клиенты">Заказать сайт</div>
+            <a href="#consult" class="button _popup-link" data-h2="Обсудить проект" data-rasp="Кнопка в разделе нужны клиенты">Заказать сайт</a>
         </div>
     </section>
 
@@ -149,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class = "button unisend_win" data-form="Заявка с блока Думаете нужен ли вам сайт">Заказать сайт</div>
+            <a href="#consult" class="button _popup-link" data-h2="Обсудить прект" data-rasp="Кнопка в разделе все еще думаете">Заказать сайт</a>
         </div>
     </section>
 

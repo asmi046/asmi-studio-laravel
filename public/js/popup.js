@@ -31,6 +31,9 @@ function popup_open(item, message = '', raspol = '') {
 		curent_popup.querySelector("input[name=form_name]").value = message
 		curent_popup.querySelector("input[name=form_rasp]").value = raspol
 		
+		localStorage.setItem("message", message)
+		localStorage.setItem("raspol", raspol)
+
 		curent_popup.classList.add('_active');
 		history.pushState('', '', '#' + item);
 	}
@@ -78,8 +81,8 @@ document.addEventListener('keydown', function (e) {
 
 if (location.hash) {
 	const hsh = location.hash.replace('#', '');
-	if (document.querySelector('.popup_' + hsh)) {
-		popup_open(hsh);
+	if (document.querySelector('.popup_' + hsh)) {		
+		popup_open(hsh, localStorage.getItem("message"), localStorage.getItem("raspol"));
 	}
 }
 
