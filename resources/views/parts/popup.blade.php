@@ -20,18 +20,13 @@
 								<input type="hidden" name = "form_name" value = "Заказать звонок">
 								<input type="hidden" name = "form_rasp" value = "По умолчанию">
 								<input type="hidden" name = "form_address" value = "{{url()->current()}}">
-								<input required type="text" name="name" placeholder="Имя" class="popup__form-input input">
-								@error('name')
-									<p class = "formError">{{$message}}</p>
-								@enderror
-								<input required type="tel" name="phone" placeholder="Телефон" class="popup__form-input input _phone"> 
-								@error('phone')
-									<p class = "formError">{{$message}}</p>
-								@enderror
+								<input required type="text" name="name" placeholder="Имя" class="input_name popup__form-input input">
+								<input required type="tel" name="phone" placeholder="Телефон" class="input_phone popup__form-input input _phone"> 
+								
 							</div>
 							<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></p>
-							<button type = "submit" class="button" data-formid = "request_call">Заказать</button>
+							<button type = "submit" class="button new_send_btn" data-formid = "request_call">Отправить</button>
 							</div>
 						</form>
 				</div>

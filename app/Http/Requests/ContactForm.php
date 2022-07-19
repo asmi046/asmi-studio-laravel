@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Rules\isPhone;
 
 class ContactForm extends FormRequest
 {
@@ -25,7 +26,8 @@ class ContactForm extends FormRequest
     {
         return [
             'name' => ['required', 'string'],
-            'phone' => ['required', 'string']
+            'phone' => ['required', 'string', new isPhone]
         ];
     }
+
 }

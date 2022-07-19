@@ -33,9 +33,15 @@
         </div>
     </div>
 </footer>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  
 <script type='text/javascript' src='{{ asset('js/jquery.js?ver=1.12.5') }}'></script>
 <script type='text/javascript' src='{{ asset('js/jquery.arcticmodal-0.3.min.js') }}'></script>
 <script type='text/javascript' src='{{ asset('js/scripts.min.js') }}'></script>
 <script src="{{ asset('js/scripts.js?ver=1.0.14') }}"></script>
 <script type='text/javascript' src="{{ asset('js/popup.js') }}"></script>
 <script type='text/javascript' src="{{ asset('js/goto.js') }}"></script>
+<script type='text/javascript' src="{{ asset('js/sender.js') }}"></script>

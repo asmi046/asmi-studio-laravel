@@ -62,6 +62,7 @@ textarea {
     min-height: 30px;
     padding: 5px 15px;
     margin: 5px 0;
+	outline:none;
 }
 
 a {
