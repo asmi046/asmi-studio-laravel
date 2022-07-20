@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => { 
-    let send_popup_input = document.querySelectorAll(".popup__form-input")
+    let send_popup_input = document.querySelectorAll("input")
 
     for (let elem of send_popup_input)
     elem.addEventListener("click", function (e) {
         e.preventDefault()
-        elem.style.backgroundColor = "#ffffff"
-        elem.style.border = "1px solid #b7b7b7"
+        elem.classList.remove("input_error")
     });
 
     let send_btn = document.querySelector(".new_send_btn")
@@ -32,8 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                      {
                         console.log(error[0])
                         console.log(error[1][0])
-                        form.querySelector(".input_"+error[0]).style.border = "1px solid #d6707a"
-                        form.querySelector(".input_"+error[0]).style.backgroundColor = "#fcb6bd"
+                        form.querySelector(".input_"+error[0]).classList.add("input_error")
 
                      }
                 } else

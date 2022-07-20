@@ -46,17 +46,9 @@
                         <input type="hidden" name = "form_rasp" value = "Страница контактов">
                         <input type="hidden" name = "form_address"  value = "{{url()->current()}}">
         
-                        <input type="text" name = "name" placeholder="Введите ваше имя">
-        
-                        @error('name')
-                            <p class = "formError">{{$message}}</p>
-                        @enderror
-        
-                        <input type="tel" name = "phone" placeholder="Введите телефон">
-                        
-                        @error('phone')
-                            <p class = "formError">{{$message}}</p>
-                        @enderror
+                        <input type="text" name = "name" placeholder="Введите ваше имя*" class = "@error('name') input_error @enderror"  value = "{{ old('name') }}">        
+                        <input type="tel" name = "phone" placeholder="Введите телефон*" class = "@error('phone') input_error @enderror" value = "{{ old('phone') }}">
+
         
                         <button type = "submit" class = "button">Отправить</button>
                     </form>

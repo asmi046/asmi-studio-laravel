@@ -16,7 +16,7 @@
         <meta property="og:title" content="@yield('title')" />
         <meta property="og:description" content="@yield('description')" />
         <meta property="og:url" content="{{ route('home') }}" />
-        <meta property="og:site_name" content="" />
+        <meta property="og:site_name" content="Asmi-Studio - разработка сайтов" />
 
         <meta property="og:image" content="@yield('img_url')" />
         <meta property="og:image:secure_url" content="@yield('img_url')" />

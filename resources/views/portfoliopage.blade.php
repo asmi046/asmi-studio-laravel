@@ -3,6 +3,8 @@
 @section('title', $info[0]->seo_title)
 @section('description', $info[0]->seo_description)
 
+@section('img_url', asset('img/portfolio/'.$info[0]->image_folder_name.'/'.$info[0]->page_prev))
+
 @section('content')
     <section class = "portfolio_section">
         <div class = "content">

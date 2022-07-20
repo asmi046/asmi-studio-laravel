@@ -3,6 +3,8 @@
 @section('title', "Портфолио и кейсы нашей компании - Asmi-Studio")
 @section('description', "Проекты по разработке сайтов, редизайну и web программированию. Все кейсы нашей компании с подробным описанием.")
 
+@section('img_url', asset('img/girl-coll.jpg'))
+
 @section('content')
     <section class = "all_portfolio">
         <div class = "content">

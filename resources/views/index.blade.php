@@ -3,6 +3,8 @@
 @section('title', "Asmi-Studio - разработка сайтов и дизайн")
 @section('description', "Разработка сайтов и Web - дизайн от профессиональной веб студии,Мы создаем сайты любой сложности за минимальные сроки. Мы гарантируем индивидуальный подход к каждому клиенту.")
 
+@section('img_url', asset('img/komp-bg-desctop.webp'))
+
 @section('content')
     <section class = "main_banner" style="background-image: url(img/komp-bg-desctop.webp);">
         <div class = "main_banner_info">

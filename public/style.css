@@ -75,7 +75,6 @@ h1 {
 	font-weight: 600;
 }
 
-.portfolio_osnblk .p_info a,
 .orange_lnk {
 	color:#FA8807;
 	text-decoration:none;
@@ -117,9 +116,6 @@ a:hover {
 .menu li a{  
 	color:#333333;
 	text-decoration:none;
-}
-
-.black_label {
 }
 
 .hcontacts {
@@ -815,8 +811,6 @@ section {
     border-radius: 125px;
 }
 	
-
-.vy_mi_box_elem h3 {}
 .vy_mi_box_elem .vy_mi_txt {
 	font-family: 'PT Sans', sans-serif;
 	font-size:18px;
@@ -905,10 +899,6 @@ section {
     margin-right: 20px;
 	margin-left: 10px;
 	cursor:pointer;
-}
-
-.faq_box_elem .qtop .q{ 
-
 }
 
 .faq_box_elem .otvet {
@@ -1162,10 +1152,6 @@ footer .content .fblk ul li a{
 }
 
 
-.all_portfolio {
-
-}
-
 .all_portfolio h2{
 	text-align:left;
 }
@@ -1264,10 +1250,6 @@ footer .content .fblk ul li a{
 .web_prtfolio_box_elem:hover  .portfolio_descr,
 .portfolio_blk:hover .portfolio_descr{ 
 	margin-left:0;
-}
-
-.breadcrumbs {
-
 }
 
 .breadcrumbs {
@@ -1470,10 +1452,6 @@ footer .content .fblk ul li a{
 	margin-bottom:30px;
 }
 
-.client_keys {
-	
-}
-
 .client_keys_box {
 	display:flex;
 	justify-content:space-between;
@@ -1609,6 +1587,11 @@ footer .content .fblk ul li a{
 	margin-top: 0;
 }
 
+.input_error {
+	border: 1px solid #d6707a!important;
+	background-color: #fcb6bd;
+}
+
 @media screen and (max-width:1440px), handheld{ 
 	.main_banner {
 		background-position: center right -335px;
@@ -1618,10 +1601,6 @@ footer .content .fblk ul li a{
 		background-size: contain;
 	}
 
-	.main_banner {
-		/*height: auto;*/
-	}
-	
 	.main_banner__start.main_banner {
 		background-size: auto 80%;
 	}
@@ -1678,8 +1657,6 @@ footer .content .fblk ul li a{
 	.text_iner_blk {
 		padding-right: 14px;
 	}
-	
-
 	
 	.web_facts.web_facts__start {
 		background-position: -150px 0;
@@ -2235,9 +2212,6 @@ footer .content .fblk ul li a{
 
 @media screen and (max-width: 900px), handheld {
 
-	.vy_mi_box .slick-list {
-		/*overflow: visible; */
-	}
 	.vy_mi_box {
 		width: 100%;
 		display: block;
