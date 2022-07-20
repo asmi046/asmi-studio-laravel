@@ -12,11 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (send_btn)
         send_btn.addEventListener("click", function (e) {
             e.preventDefault()
-            
+            let loader = document.querySelector(".popup_btn_wrapper img")
             let form = document.getElementById("request_call")
             let data = new FormData(form)
             let actionAdr = form.getAttribute("action")
 
+            loader.style.display = "block";
             var xhr = new XMLHttpRequest()
             
             xhr.open("post", actionAdr, true)
@@ -39,11 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (xhr.status == 200) {
                     document.location.href = "/thanks"
                 }
+                
+                loader.style.display = "none";
             };
 
             xhr.onerror = function () {
                 alert(xhr.responseText)
                 console.log(xhr.status)
+                loader.style.display = "none";
             };
 
             xhr.send(data);

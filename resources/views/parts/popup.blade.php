@@ -26,7 +26,11 @@
 							</div>
 							<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></p>
-							<button type = "submit" class="button new_send_btn" data-formid = "request_call">Отправить</button>
+							
+								<div class="popup_btn_wrapper">	
+									<button type = "submit" class="button new_send_btn" data-formid = "request_call">Отправить</button>
+									<img src="{{asset('/img/icon/loader.svg')}}" alt="">
+								</div>
 							</div>
 						</form>
 				</div>

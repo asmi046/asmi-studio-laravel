@@ -179,6 +179,17 @@
     margin: 10px 0;
   }
 
+  .popup_btn_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup_btn_wrapper img{ 
+    height: 30px;
+    display: none;
+  }
+
     @media screen and (max-width:900px), handheld { 
         
     }
