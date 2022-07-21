@@ -27,10 +27,10 @@
             <div class = "center portfolio_all portfolio_colors">
                 <h2>Цветовое решение</h2>
                 <div class = "clrWraper">
-                    <div class = "colorBlk" style = "background-color:{{$info[0]->color1}};">{{$info[0]->color1}}</div>
+                    <div class = "colorBlk" style = "background-color:{{$info[0]->color1}}; color: {{color_diff($info[0]->color1)}};">{{$info[0]->color1}}</div>
                     <div class = "colorBlk" style = "background-color:{{$info[0]->color2}}; border: 1px solid #28475C;">{{$info[0]->color2}}</div>
-                    <div class = "colorBlk" style = "background-color:{{$info[0]->color3}};color: #FFFFFF;">{{$info[0]->color3}}</div>
-                    <div class = "colorBlk" style = "background-color:{{$info[0]->color4}};color: white;">{{$info[0]->color4}}</div>
+                    <div class = "colorBlk" style = "background-color:{{$info[0]->color3}};color: {{color_diff($info[0]->color3)}};">{{$info[0]->color3}}</div>
+                    <div class = "colorBlk" style = "background-color:{{$info[0]->color4}};color: {{color_diff($info[0]->color4)}};">{{$info[0]->color4}}</div>
                 </div>
             </div>
             
