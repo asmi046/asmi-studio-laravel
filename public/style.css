@@ -1810,6 +1810,9 @@ footer .content .fblk ul li a{
 }
 
 @media screen and (max-width:1080px), handheld {
+	.cerecter_box_elem {
+		padding: 3%;
+	}
 
 	.menu {
 		display: none;
@@ -1830,6 +1833,7 @@ footer .content .fblk ul li a{
 	
 	header .mini-logo{
 		order:1;
+		display: block;
 	}
 	
 	header .hamburger{
