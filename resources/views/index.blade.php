@@ -20,7 +20,7 @@
             
             <div class = "main_banner_buttons_wrapper">
                 <a href = "#consult" class = "button _popup-link" data-h2="Обсудить проект" data-rasp="Кнопка в баннере">Обсудить проект</a>
-                <a href = "#pric" onclick = "_goto(this); e.stopPropagation();" class = "button button-white">Сориентироваться в ценах</a>
+                <a href = "#pric" onclick = "_goto(this); e.stopPropagation();" class = "button button-white">Узнать цены</a>
             </div>
             
         </div>
