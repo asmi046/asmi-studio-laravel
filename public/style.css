@@ -315,7 +315,7 @@ a:hover {
 .mini-logo {
 	display:none;
 	width: 20px;
-	margin: auto 15px auto 0;
+	margin: auto 15px auto 15px;
 }
 
 .inner_page .mini-logo {
@@ -1592,6 +1592,15 @@ footer .content .fblk ul li a{
 	background-color: #fcb6bd;
 }
 
+.full_h {
+	min-height: calc(100vh - 200px);
+}
+
+.main_img {
+	width: 100%;
+	height: auto;
+}
+
 @media screen and (max-width:1440px), handheld{ 
 	.main_banner {
 		background-position: center right -335px;
@@ -1609,11 +1618,7 @@ footer .content .fblk ul li a{
 		font-size: 52px;
 	}
 	
-	.inner_page .mini-logo,
-	.mini-logo img,
-	.headfixed .mini-logo {
-		padding-left: 14px;
-	}
+	
 	header {
 		width: 100%;
 		padding: 0;
@@ -1903,6 +1908,8 @@ footer .content .fblk ul li a{
 	
 	.hamburger {
 		margin-right:10px;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 	
 	.work_etap_box:before {
@@ -2382,7 +2389,7 @@ footer .content .fblk ul li a{
 	    padding-bottom: 350px;
 	}
 	.phone_in_head {
-		display: none;
+		font-size: 22px;
 	}
 	.arrow {
 		display: none;
@@ -2858,6 +2865,8 @@ footer .content .fblk ul li a{
 		font-size: 18px;
 	}
 	
+	.p404 h1,
+	.thencs h1,
 	.all_portfolio h1, .main_banner_info h1 {
 		font-size: 42px;
 	}
