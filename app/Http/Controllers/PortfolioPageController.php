@@ -15,8 +15,15 @@ class PortfolioPageController extends Controller
 
         $images = PortfolioPost::where('image_folder_name', $pagename)->first()->portfolio_post_images;
         $next = PortfolioPost::where('order', $portfolio[0]->order + 1)->take(1)->get();
+
+        if ($next->isEmpty())
+            $next = PortfolioPost::where('order', 0)->take(1)->get();
+
         $prev = PortfolioPost::where('order', $portfolio[0]->order - 1)->take(1)->get();
         
+        if ($prev->isEmpty())
+            $prev = PortfolioPost::where('order', 0)->take(1)->get();
+
         $img_array = [];
 
         foreach ($images as $el) {
