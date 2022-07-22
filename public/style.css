@@ -1601,6 +1601,42 @@ footer .content .fblk ul li a{
 	height: auto;
 }
 
+.portfolio_navigation {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	display: flex;
+}
+
+.portfolio_navigation a{
+	display: block;
+	width:30px;
+	height: 30px;
+	border: 2px solid #FA8807;
+	background-color: white;
+	margin: 5px;
+	border-radius:5px;
+	background-size: 70%;
+	background-repeat: no-repeat;	
+	background-position: center;
+}
+
+.portfolio_navigation a:hover{ 
+	background-size: 82%;
+}
+
+.portfolio_navigation .prev_btn{
+	background-image: url(img/icon/portfolio-arrow.svg);
+	transform: rotate(90deg);
+} 
+.portfolio_navigation .next_btn{ 
+	background-image: url(img/icon/portfolio-arrow.svg);
+	transform: rotate(-90deg);
+}
+.portfolio_navigation .list_btn{ 
+	background-image: url(img/icon/portfolio_menu.svg);
+}
+
 @media screen and (max-width:1440px), handheld{ 
 	.main_banner {
 		background-position: center right -335px;

@@ -6,6 +6,19 @@
 @section('img_url', asset('img/portfolio/'.$info[0]->image_folder_name.'/'.$info[0]->page_prev))
 
 @section('content')
+    
+    <div class="portfolio_navigation">
+        @if (!$prev->isEmpty())
+            <a href="{{ route('portfolio_page', ['pagename' => $prev[0]->image_folder_name ]) }}" title = "{{$prev[0]->name}}" class="prev_btn"></a>    
+        @endif
+        
+        <a href="{{ route('portfolio') }}" title = "Все портфолио" class="list_btn"></a>
+        
+        @if (!$next->isEmpty())
+            <a href="{{ route('portfolio_page', ['pagename' => $next[0]->image_folder_name ]) }}" title = "{{$next[0]->name}}" class="next_btn"></a>
+        @endif
+    </div>
+
     <section class = "portfolio_section">
         <div class = "content">
             <div class = "breadcrumbs">
