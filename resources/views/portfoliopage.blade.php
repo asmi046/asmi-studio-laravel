@@ -9,7 +9,7 @@
     <section class = "portfolio_section">
         <div class = "content">
             <div class = "breadcrumbs">
-                <a href = "{{ route('home') }}">Главная</a> / <a href = "{{ route('portfolio') }}">Портфолио</a> / Сайт каталог для магазина 1-й Военторг
+                <a href = "{{ route('home') }}">Главная</a> / <a href = "{{ route('portfolio') }}">Портфолио</a> / {{$info[0]->name}}
             </div>
             <div class = "center portfolio_osnblk">
                 <div class = "p_info">

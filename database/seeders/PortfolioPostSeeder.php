@@ -18,9 +18,61 @@ class PortfolioPostSeeder extends Seeder
      */
     public function run()
     {
+
         DB::table("portfolio_posts")->insert(
             [
                 'order' => 0,
+                'url' => '',
+                'name' => 'Lending Page для продажи реплик наушников CLR PODS',
+                'image_folder_name' => 'clrpds',
+                'seo_title' => 'Кейс: Разработка Lending Page для продажи реплик популярных наушников - Asmi-Studio',
+                'seo_description' => 'Проект по созданию посадочной страницы для продажи реплик TWS наушников. Разработка Lending Page в Курске',
+                'content' => 'В рамках проекта создана посадочная страница для продажи реплик безпроводных наушников под брендом CLR PODS. Конверсия трафика из социальных сетей 7%.',
+                'color1' => '#f8859e',
+                'color2' => '#FFFFFF',
+                'color3' => '#89d0ce',
+                'color4' => '#4aab4d',
+                'oblozgka' => 'clrpds-obl.webp',
+                'page_prev' => 'clrpds-present.webp' 
+            ]);
+
+        DB::table("portfolio_posts")->insert(
+            [
+                'order' => 1,
+                'url' => '',
+                'name' => 'Разработка сайта каталога "Энчи-Фарм"',
+                'image_folder_name' => 'enchi',
+                'seo_title' => 'Кейс: Сайт с каталогом продукции "Энчи-Фарм" - Asmi-Studio',
+                'seo_description' => 'Разработка презентационного сайта для оптовой компании с интеграцией каталога товаров. Разработка интернет-магазинов не дорого.',
+                'content' => 'Представляем Вашему вниманию кейс по созданию сайта с каталогом продукции для оптовой компании "Энчи-Фарм". Данный сайт был адаптирован и переведен на Китайский язык.',
+                'color1' => '#214a3c',
+                'color2' => '#FFFFFF',
+                'color3' => '#52B491',
+                'color4' => '#f3f3f5',
+                'oblozgka' => 'enchi-obl.webp',
+                'page_prev' => 'enchi-present.webp' 
+            ]);
+
+        DB::table("portfolio_posts")->insert(
+            [
+                'order' => 2,
+                'url' => '',
+                'name' => 'Посадочная страница для косметолога',
+                'image_folder_name' => 'donetskaya',
+                'seo_title' => 'Кейс: Посадочная страница для косметолога - Asmi-Studio',
+                'seo_description' => 'Разработка посадочной страницы для косметолога Светланы Донецкой.',
+                'content' => 'Посадочная страница для рекламы косметологических услуг. Были проведены работы по разработке сайта и настройке событий Яндекс.Метрики.',
+                'color1' => '#08a28b',
+                'color2' => '#FFFFFF',
+                'color3' => '#e75733',
+                'color4' => '#e3e7ef',
+                'oblozgka' => 'donetskaya-obl.webp',
+                'page_prev' => 'donetskaya-present.webp' 
+            ]);
+
+        DB::table("portfolio_posts")->insert(
+            [
+                'order' => 3,
                 'url' => '',
                 'name' => 'Сайт каталог для магазина 1-й Военторг',
                 'image_folder_name' => '1vtorg',
@@ -37,7 +89,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 1,
+                    'order' => 4,
                     'url' => '',
                     'name' => 'Сайт для сервиса по дитейлингу Автотишина',
                     'image_folder_name' => 'autotish',
@@ -54,7 +106,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 2,
+                    'order' => 5,
                     'url' => '',
                     'name' => 'Cайта для клубного дома "Боева Дача"',
                     'image_folder_name' => 'boeva',
@@ -69,26 +121,11 @@ class PortfolioPostSeeder extends Seeder
                     'page_prev' => 'boeva-present.webp' 
                 ]);
 
-            DB::table("portfolio_posts")->insert(
-                [
-                    'order' => 3,
-                    'url' => '',
-                    'name' => 'Lending Page для продажи реплик наушников CLR PODS',
-                    'image_folder_name' => 'clrpds',
-                    'seo_title' => 'Кейс: Разработка Lending Page для продажи реплик популярных наушников - Asmi-Studio',
-                    'seo_description' => 'Проект по созданию посадочной страницы для продажи реплик TWS наушников. Разработка Lending Page в Курске',
-                    'content' => 'В рамках проекта создана посадочная страница для продажи реплик безпроводных наушников под брендом CLR PODS. Конверсия трафика из социальных сетей 7%.',
-                    'color1' => '#f8859e',
-                    'color2' => '#FFFFFF',
-                    'color3' => '#89d0ce',
-                    'color4' => '#4aab4d',
-                    'oblozgka' => 'clrpds-obl.webp',
-                    'page_prev' => 'clrpds-present.webp' 
-                ]);
+
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 4,
+                    'order' => 6,
                     'url' => '',
                     'name' => 'Посадочная страница - Заправка картриджей ДМ',
                     'image_folder_name' => 'dmlend',
@@ -103,26 +140,11 @@ class PortfolioPostSeeder extends Seeder
                     'page_prev' => 'dmlend-present.webp' 
                 ]);
 
-            DB::table("portfolio_posts")->insert(
-                [
-                    'order' => 5,
-                    'url' => '',
-                    'name' => 'Посадочная страница для косметолога',
-                    'image_folder_name' => 'donetskaya',
-                    'seo_title' => 'Кейс: Посадочная страница для косметолога - Asmi-Studio',
-                    'seo_description' => 'Разработка посадочной страницы для косметолога Светланы Донецкой.',
-                    'content' => 'Посадочная страница для рекламы косметологических услуг. Были проведены работы по разработке сайта и настройке событий Яндекс.Метрики.',
-                    'color1' => '#08a28b',
-                    'color2' => '#FFFFFF',
-                    'color3' => '#e75733',
-                    'color4' => '#e3e7ef',
-                    'oblozgka' => 'donetskaya-obl.webp',
-                    'page_prev' => 'donetskaya-present.webp' 
-                ]);
+
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 6,
+                    'order' => 7,
                     'url' => '',
                     'name' => 'Сайт сервисного центра Easy Comp 24',
                     'image_folder_name' => 'easycomnew',
@@ -137,22 +159,7 @@ class PortfolioPostSeeder extends Seeder
                     'page_prev' => 'easycomnew-present.webp' 
                 ]);
 
-            DB::table("portfolio_posts")->insert(
-                [
-                    'order' => 7,
-                    'url' => '',
-                    'name' => 'Разработка сайта каталога "Энчи-Фарм"',
-                    'image_folder_name' => 'enchi',
-                    'seo_title' => 'Кейс: Сайт с каталогом продукции "Энчи-Фарм" - Asmi-Studio',
-                    'seo_description' => 'Разработка презентационного сайта для оптовой компании с интеграцией каталога товаров. Разработка интернет-магазинов не дорого.',
-                    'content' => 'Представляем Вашему вниманию кейс по созданию сайта с каталогом продукции для оптовой компании "Энчи-Фарм". Данный сайт был адаптирован и переведен на Китайский язык.',
-                    'color1' => '#214a3c',
-                    'color2' => '#FFFFFF',
-                    'color3' => '#52B491',
-                    'color4' => '#f3f3f5',
-                    'oblozgka' => 'enchi-obl.webp',
-                    'page_prev' => 'enchi-present.webp' 
-                ]);
+
 
             DB::table("portfolio_posts")->insert(
                 [
@@ -207,7 +214,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 12,
+                    'order' => 11,
                     'url' => '',
                     'name' => 'Сайт портфолио для компании Интерьерно',
                     'image_folder_name' => 'interierno',
@@ -224,7 +231,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 13,
+                    'order' => 12,
                     'url' => '',
                     'name' => 'Сайт каталог для кузницы "Кузнечный двор"',
                     'image_folder_name' => 'kuzdvor',
@@ -241,24 +248,24 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 14,
+                    'order' => 13,
                     'url' => '',
-                    'name' => 'Сайт сервисного центра Easy Comp 24',
+                    'name' => 'Сайт компании Light-Snab оптовая продажа бытового света',
                     'image_folder_name' => 'lightsnab',
-                    'seo_title' => 'Кейс: Сайт сервиса по ремонту компютеров "Easy Comp 24" - Asmi-Studio',
-                    'seo_description' => 'Разработка сайта для компании оказывающей услуги по ремонту компютеров и ноутбуков. Создание сайтов по выгодным ценам.',
-                    'content' => 'В рамках проекта реализован сайт сервиса и произведена техническая SEO оптимизация структуры и страниц сайта.',
-                    'color1' => '#6cc72a',
+                    'seo_title' => 'Кейс: Сайт компании Light-Snab оптовая продажа бытового света - Asmi-Studio',
+                    'seo_description' => 'Разработка сайта для компании Light-Snab которая специализируется на оптовой продаже светового оборудования.',
+                    'content' => 'Компании Light-Snab специализируется на работе с дизайнерами интерьера и предоставляем им комплексные услуги. При разработке сайта был сделан акцент на преимуществах сотрудничества с компанией.',
+                    'color1' => '#fed600',
                     'color2' => '#FFFFFF',
-                    'color3' => '#28475c',
-                    'color4' => '#3a424d',
+                    'color3' => '#f3f3f5',
+                    'color4' => '#37363b',
                     'oblozgka' => 'lightsnab-obl.webp',
                     'page_prev' => 'lightsnab-present.webp' 
                 ]);
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 15,
+                    'order' => 14,
                     'url' => '',
                     'name' => 'Корпоративный сайт "Русский ФабрикантЪ"',
                     'image_folder_name' => 'makmol',
@@ -275,7 +282,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 16,
+                    'order' => 15,
                     'url' => '',
                     'name' => 'Личный сайт психотерапевта Нины Марченко',
                     'image_folder_name' => 'marhenko',
@@ -292,7 +299,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 17,
+                    'order' => 16,
                     'url' => '',
                     'name' => 'Корпоративный сайт для компании "База-Мастер"',
                     'image_folder_name' => 'bazamaster',
@@ -309,7 +316,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 18,
+                    'order' => 17,
                     'url' => '',
                     'name' => 'Разработка интернет магазина "N-Автоматика"',
                     'image_folder_name' => 'na',
@@ -326,7 +333,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 19,
+                    'order' => 18,
                     'url' => '',
                     'name' => 'Корпоративный сайт для компании "Nesterova Media"',
                     'image_folder_name' => 'nesterova',
@@ -343,7 +350,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 20,
+                    'order' => 19,
                     'url' => '',
                     'name' => 'Презентационный сайт рекламной компании "OnLine - медиа"',
                     'image_folder_name' => 'onlinemedia',
@@ -360,7 +367,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 21,
+                    'order' => 20,
                     'url' => '',
                     'name' => 'Сайт для ведущего Potapov-Official',
                     'image_folder_name' => 'potapov',
@@ -378,7 +385,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 23,
+                    'order' => 21,
                     'url' => '',
                     'name' => 'Сайт сервиса Пропуска МКАД',
                     'image_folder_name' => 'propuska',
@@ -395,7 +402,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 24,
+                    'order' => 22,
                     'url' => '',
                     'name' => 'Сайт эстетически-образовательного конкурса Самая Самая',
                     'image_folder_name' => 'samaya',
@@ -412,7 +419,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 25,
+                    'order' => 23,
                     'url' => '',
                     'name' => 'Сайт для службы доставки Самосвал 46',
                     'image_folder_name' => 'samosval',
@@ -429,7 +436,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 26,
+                    'order' => 24,
                     'url' => '',
                     'name' => 'Сайт коттеджного поселка Селенга',
                     'image_folder_name' => 'selenga',
@@ -446,7 +453,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 27,
+                    'order' => 25,
                     'url' => '',
                     'name' => 'Сайт Tabula Rassa - банкротство физлиц',
                     'image_folder_name' => 'tabula',
@@ -463,7 +470,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 28,
+                    'order' => 26,
                     'url' => '',
                     'name' => 'Интернет магазин кадетской формы Юнармия 46',
                     'image_folder_name' => 'unarmy',
@@ -480,7 +487,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 29,
+                    'order' => 27,
                     'url' => '',
                     'name' => 'Сайт клиники "Verbena"',
                     'image_folder_name' => 'verbena',
@@ -497,7 +504,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 30,
+                    'order' => 28,
                     'url' => '',
                     'name' => 'Разработка сайта для проекта "We-Go"',
                     'image_folder_name' => 'wego',
@@ -514,7 +521,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 31,
+                    'order' => 29,
                     'url' => '',
                     'name' => 'Сайта для компании Засоров Нет',
                     'image_folder_name' => 'zasorovnet',
@@ -531,7 +538,7 @@ class PortfolioPostSeeder extends Seeder
 
             DB::table("portfolio_posts")->insert(
                 [
-                    'order' => 32,
+                    'order' => 30,
                     'url' => '',
                     'name' => 'Разработка сайта магазина Карамельная мануфактура',
                     'image_folder_name' => 'caramel',

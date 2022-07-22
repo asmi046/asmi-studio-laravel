@@ -20,6 +20,7 @@
                 "#D3D3D3" => "#000000",
                 "#FCEDEA" => "#000000",
                 "#BFE4EA" => "#000000",
+                "#FED600" => "#000000",
             ];
 
             return (isset($color_s[strtoupper($clr1)]))?$color_s[strtoupper($clr1)]:"#FFFFFF";

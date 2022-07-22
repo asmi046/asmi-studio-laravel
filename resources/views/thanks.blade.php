@@ -18,7 +18,11 @@
                     <a href="{{route('portfolio')}}" class="button">Смотреть портфолио</a>
                 </div>
                 <div class = "cell">
-                    <img class = "main_img" src="{{asset("img/15min.jpg")}}" alt="Спасибо за обращение">
+                    <picture>
+                        <source srcset="{{asset("img/15min.webp")}}" type="image/webp">
+                        <img class = "main_img" src="{{asset("img/15min.jpg")}}" alt="Спасибо за обращение">
+                    </picture>
+                    
                 </div>
             </div>
 

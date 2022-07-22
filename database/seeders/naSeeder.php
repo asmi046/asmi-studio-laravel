@@ -20,7 +20,7 @@ class naSeeder extends Seeder
             [
                 "post_name" => 'na',
                 "razdel_name" => 'Главная страница',
-                "img" => 'potapov-screen1.webp',
+                "img" => 'na-main.webp',
                 "img_title" => '',
                 "img_alt"  => ''
             ]);
