@@ -7,7 +7,10 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+
+        "clone_rep": "ssh asmi04s9@asmi04s9.beget.tech \"git clone https://github.com/asmi046/asmi-studio-laravel asmi04s9.beget.tech/public_html\"",
+        "laravel_install": "ssh asmi046@81.177.141.133 \"asmi04s9.beget.tech/public_html/composer install\""
     },
     "devDependencies": {
         "axios": "^0.25",
