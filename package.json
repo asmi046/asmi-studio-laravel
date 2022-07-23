@@ -10,6 +10,7 @@
         "production": "mix --production",
 
         "clone_rep": "ssh asmi04s9@asmi04s9.beget.tech \"git clone https://github.com/asmi046/asmi-studio-laravel asmi04s9.beget.tech/public_html\"",
+        "pull_rep": "ssh asmi04s9@asmi04s9.beget.tech \"cd asmi04s9.beget.tech/public_html && git pull\"",
         "laravel_install": "ssh asmi046@81.177.141.133 \"asmi04s9.beget.tech/public_html/composer install\""
     },
     "devDependencies": {
