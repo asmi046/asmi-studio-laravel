@@ -33,7 +33,7 @@
                     </p>
                 </div>
                 <div class = "p_picture">
-                    <img src = "../img/portfolio/{{$info[0]->image_folder_name}}/{{$info[0]->page_prev}}">
+                    <img loading="lazy" src = "../img/portfolio/{{$info[0]->image_folder_name}}/{{$info[0]->page_prev}}">
                 </div>
             </div>
             
@@ -51,7 +51,7 @@
                 <div class = "center portfolio_all @if ($key === "Адаптация под мобильные устройства") portfolio_mobile @else portfolio_image @endif">
                     <h2>{{$key}}</h2>
                     @foreach ($value as $im)
-                        <img src = "{{asset('img/portfolio/'.$im->post_name.'/'.$im->img)}}">
+                        <img loading="lazy" src = "{{asset('img/portfolio/'.$im->post_name.'/'.$im->img)}}">
                     @endforeach
                 </div>
             @endforeach
