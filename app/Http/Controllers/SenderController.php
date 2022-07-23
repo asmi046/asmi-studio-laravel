@@ -34,7 +34,7 @@ class SenderController extends Controller
                 curl_setopt_array(
                     $ch,
                     array(
-                        CURLOPT_URL => 'https://api.telegram.org/bot' . env("TG_TOKEN") . '/sendMessage',
+                        CURLOPT_URL => 'https://api.telegram.org/bot' . $_ENV["TG_TOKEN"] . '/sendMessage',
                         CURLOPT_POST => TRUE,
                         CURLOPT_RETURNTRANSFER => TRUE,
                         CURLOPT_TIMEOUT => 10,
