@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Facade;
 
 return [
-
+    "tg_token" => env("TG_TOKEN"),
     /*
     |--------------------------------------------------------------------------
     | Application Name
