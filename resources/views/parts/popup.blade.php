@@ -5,7 +5,8 @@
 			<div class="popup__item d-flex">
 				<div class="popup__img">
 					<picture>
-						<source srcset="{{asset('/img/popup.webp')}}" type="image/webp"><img src="{{asset('/img/popup.jpg')}}" alt="">
+						<source srcset="{{asset('/img/popup.webp')}}" type="image/webp">
+							<img loading="lazy" src="{{asset('/img/popup.jpg')}}" alt="">
 					</picture>
 				</div>
 				<div class="popup__form-block">  
@@ -29,7 +30,7 @@
 							
 								<div class="popup_btn_wrapper">	
 									<button type = "submit" class="button new_send_btn" data-formid = "request_call">Отправить</button>
-									<img src="{{asset('/img/icon/loader.svg')}}" alt="">
+									<img loading="lazy" src="{{asset('/img/icon/loader.svg')}}" alt="">
 								</div>
 							</div>
 						</form>
