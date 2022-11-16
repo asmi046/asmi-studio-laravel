@@ -56,7 +56,10 @@
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/14710126" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
-
+        @vite([
+                'resources/css/app.css',
+                'resources/js/app.js',
+        ])
     </head>
     <body>
         @include('parts.popup')
