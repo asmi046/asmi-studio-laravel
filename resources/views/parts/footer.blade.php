@@ -23,7 +23,7 @@
 
         <div class = "fblk" id = "fblk4">
             <h3>Контакты</h3>
-            <a href = "tel:+7{{ config('contacts.phone') }}">{{ config('contacts.phone') }}</a><br/>
+            <a href = "tel:+7{{ phone_format(config('contacts.phone')) }}">{{ config('contacts.phone') }}</a><br/>
             <a href = "mailto:info@asmi-studio.ru">{{ config('contacts.email') }}</a>
 
             <div class = "socicon_in_footer">
