@@ -671,7 +671,7 @@ section {
 	background-position: center;
 	-webkit-background-size: 60%;
 	background-size: 60%;
-	background-image: url(./img/icon/back-white.svg);
+	background-image: url(../img/icon/back-white.svg);
 	cursor: pointer;
 	z-index: 10;
 }
@@ -1034,42 +1034,42 @@ footer .content .fblk ul li a{
 
 .li_design:before {
 	content:"";
-	background-image:url(img/icon/design.svg)
+	background-image:url(../img/icon/design.svg)
 }
 
 .li_pages:before {
 	content:"";
-	background-image:url(img/icon/pages.svg)
+	background-image:url(../img/icon/pages.svg)
 }
 
 .li_cms:before {
 	content:"";
-	background-image:url(img/icon/cms.svg)
+	background-image:url(../img/icon/cms.svg)
 }
 
 .li_vozm:before {
 	content:"";
-	background-image:url(img/icon/settings.svg)
+	background-image:url(../img/icon/settings.svg)
 }
 
 .li_animation:before {
 	content:"";
-	background-image:url(img/icon/animation.svg)
+	background-image:url(../img/icon/animation.svg)
 }
 
 .li_consult:before {
 	content:"";
-	background-image:url(img/icon/consultant.svg)
+	background-image:url(../img/icon/consultant.svg)
 }
 
 .li_fid:before {
 	content:"";
-	background-image:url(img/icon/fid.svg)
+	background-image:url(../img/icon/fid.svg)
 }
 
 .li_micro:before {
 	content:"";
-	background-image:url(img/icon/micro.svg)
+	background-image:url(../img/icon/micro.svg)
 }
 
 #order_uslugi_modal .wraper_uslugi_text_price {
@@ -1490,7 +1490,7 @@ footer .content .fblk ul li a{
 }
 .dialog-cb-button a {
     display: block;
-    background: #FA8807 url(./img/callback__button.png) no-repeat center center;
+    background: #FA8807 url(../img/callback__button.png) no-repeat center center;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -1601,15 +1601,15 @@ footer .content .fblk ul li a{
 }
 
 .portfolio_navigation .prev_btn{
-	background-image: url(img/icon/portfolio-arrow.svg);
+	background-image: url(../img/icon/portfolio-arrow.svg);
 	transform: rotate(90deg);
 }
 .portfolio_navigation .next_btn{
-	background-image: url(img/icon/portfolio-arrow.svg);
+	background-image: url(../img/icon/portfolio-arrow.svg);
 	transform: rotate(-90deg);
 }
 .portfolio_navigation .list_btn{
-	background-image: url(img/icon/portfolio_menu.svg);
+	background-image: url(../img/icon/portfolio_menu.svg);
 }
 
 @media screen and (max-width:1440px), handheld{
@@ -1758,6 +1758,7 @@ footer .content .fblk ul li a{
 	}
 
 	.main_banner {
+        max-height: 600px;
 		background-position: center right -325px;
 	}
 
@@ -1811,6 +1812,10 @@ footer .content .fblk ul li a{
 		margin-right: 6px;
 	}
 
+    .main_banner {
+
+        background-position: center right -200px;
+	}
 }
 
 @media screen and (max-width:1150px), handheld {
@@ -1860,7 +1865,7 @@ footer .content .fblk ul li a{
 		background-size:90%;
 		display: flex;
 		flex-direction: column;
-		background-image: url(img/girl-coll.jpg)!important;
+		background-image: url(../img/girl-coll.jpg)!important;
 	}
 
 	.main_banner__start.main_banner {
@@ -1976,7 +1981,7 @@ footer .content .fblk ul li a{
 
 	.mobileMenu .logo{
 		margin: 70px 0 30px auto;
-		background-image: url(img/logo-cube.svg);
+		background-image: url(../img/logo-cube.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -2031,7 +2036,7 @@ footer .content .fblk ul li a{
 	}
 
 	.closeMobileMenu {
-		background-image: url(img/close.svg);
+		background-image: url(../img/close.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -2234,6 +2239,9 @@ footer .content .fblk ul li a{
 
 @media screen and (max-width: 900px), handheld {
 
+    .main_banner {
+        max-height: unset;
+    }
 	.vy_mi_box {
 		width: 100%;
 		display: block;
